@@ -46,7 +46,7 @@ def gen_set(val_in: str) -> Set:
     :param val_in:
     :return:
     """
-    s= {char for char in val_in if char.isupper()}
+    return {char.upper() for char in val_in if char.islower()}
 
-    return s
+    #return s
     pass
